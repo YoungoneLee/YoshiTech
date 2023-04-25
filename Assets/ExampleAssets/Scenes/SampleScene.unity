@@ -328,7 +328,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6036f31488bc6461290c56475aa3948f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ArPrefabs: []
+  ArPrefabs:
+  - {fileID: 7421929562749668521, guid: e5355e0895eb441bf8fcbdd7a92a640c, type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
