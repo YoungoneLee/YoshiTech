@@ -1,13 +1,8 @@
 using System;
-
 using System.Collections.Generic;
-
 using UnityEngine;
-
 using UnityEngine.XR.ARFoundation;
-
 using UnityEngine.XR.ARSubsystems;
-
 
 
 [RequireComponent(typeof(ARTrackedImageManager))]
@@ -38,7 +33,7 @@ public class PlaceTrackedImages : MonoBehaviour {
     }
 
     private void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs) {
-        foreach (var trackedImage in eventArgs.updated) {
+        foreach (var trackedImage in eventArgs.added) {
             var imageName = trackedImage.referenceImage.name;
             foreach (var curPrefab in ArPrefabs){
                 if (string.Compare(curPrefab.name, imageName, StringComparison.OrdinalIgnoreCase) == 0 && !_instantiatedPrefabs.ContainsKey(imageName)) {
