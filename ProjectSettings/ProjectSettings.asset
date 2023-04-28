@@ -277,8 +277,8 @@ PlayerSettings:
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: /Users/youngonelee/keystore.keystore
-  AndroidKeyaliasName: yoshikey
+  AndroidKeystoreName: '{inproject}: yoshiKey.keystore'
+  AndroidKeyaliasName: yoshigang
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
