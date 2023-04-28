@@ -36,7 +36,7 @@ public class ClickableObject : MonoBehaviour
                         isObjectClicked = true;
                         uiObject.SetActive(true);
                         gameObject.SetActive(false);
-                        Invoke("ShowObject", 5f);
+                        Invoke("ShowObject", 2f);
                     }
                 }
             }

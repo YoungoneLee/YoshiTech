@@ -9491,7 +9491,7 @@ IL_000e_1:
 				Connection_tC1C0F4A942FCF4DAA70AE4D8F9A9DFACD44F5352* L_4 = V_1;
 				NullCheck(L_3);
 				bool L_5;
-				L_5 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(110 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_3, L_4);
+				L_5 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(114 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_3, L_4);
 				if (!L_5)
 				{
 					goto IL_0023_1;
@@ -10300,7 +10300,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass23_0_U3CCreateConne
 		Connection_tC1C0F4A942FCF4DAA70AE4D8F9A9DFACD44F5352* L_1 = ___c0;
 		NullCheck(L_0);
 		bool L_2;
-		L_2 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(110 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_0, L_1);
+		L_2 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(114 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_0, L_1);
 		return L_2;
 	}
 }

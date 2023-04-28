@@ -24,6 +24,7 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_Configuration_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_Core_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_Xml_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_AIModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_AndroidJNIModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_AnimationModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_AudioModule_CodeGenModule;
@@ -62,7 +63,12 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_LiveCapture_CompanionApp_CodeG
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_LiveCapture_Networking_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_LiveCapture_VideoStreaming_Server_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_LiveCapture_VirtualCamera_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_TextMeshPro_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_Timeline_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_VisualScripting_Antlr3_Runtime_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_VisualScripting_Core_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_VisualScripting_Flow_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_VisualScripting_State_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_XR_ARCore_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_XR_ARFoundation_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_XR_ARSubsystems_CodeGenModule;
@@ -75,7 +81,7 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_XR_OpenXR_Features_RuntimeDebu
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g___Generated_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_mscorlib_CodeGenModule;
 IL2CPP_EXTERN_C const Il2CppCodeGenModule* g_CodeGenModules[];
-const Il2CppCodeGenModule* g_CodeGenModules[56] = 
+const Il2CppCodeGenModule* g_CodeGenModules[62] = 
 {
 	(&g_AssemblyU2DCSharp_CodeGenModule),
 	(&g_Mono_Security_CodeGenModule),
@@ -83,6 +89,7 @@ const Il2CppCodeGenModule* g_CodeGenModules[56] =
 	(&g_System_Configuration_CodeGenModule),
 	(&g_System_Core_CodeGenModule),
 	(&g_System_Xml_CodeGenModule),
+	(&g_UnityEngine_AIModule_CodeGenModule),
 	(&g_UnityEngine_AndroidJNIModule_CodeGenModule),
 	(&g_UnityEngine_AnimationModule_CodeGenModule),
 	(&g_UnityEngine_AudioModule_CodeGenModule),
@@ -121,7 +128,12 @@ const Il2CppCodeGenModule* g_CodeGenModules[56] =
 	(&g_Unity_LiveCapture_Networking_CodeGenModule),
 	(&g_Unity_LiveCapture_VideoStreaming_Server_CodeGenModule),
 	(&g_Unity_LiveCapture_VirtualCamera_CodeGenModule),
+	(&g_Unity_TextMeshPro_CodeGenModule),
 	(&g_Unity_Timeline_CodeGenModule),
+	(&g_Unity_VisualScripting_Antlr3_Runtime_CodeGenModule),
+	(&g_Unity_VisualScripting_Core_CodeGenModule),
+	(&g_Unity_VisualScripting_Flow_CodeGenModule),
+	(&g_Unity_VisualScripting_State_CodeGenModule),
 	(&g_Unity_XR_ARCore_CodeGenModule),
 	(&g_Unity_XR_ARFoundation_CodeGenModule),
 	(&g_Unity_XR_ARSubsystems_CodeGenModule),
@@ -139,18 +151,18 @@ const Il2CppCodeRegistration g_CodeRegistration =
 {
 	14,
 	g_ReversePInvokeWrapperPointers,
-	40309,
+	54382,
 	g_Il2CppGenericMethodPointers,
 	g_Il2CppGenericAdjustorThunks,
-	9777,
+	10902,
 	g_Il2CppInvokerPointers,
-	1444,
+	1896,
 	g_UnresolvedVirtualMethodPointers,
-	522,
+	560,
 	g_Il2CppInteropData,
 	0,
 	NULL,
-	56,
+	62,
 	g_CodeGenModules,
 };
 IL2CPP_EXTERN_C_CONST Il2CppMetadataRegistration g_MetadataRegistration;

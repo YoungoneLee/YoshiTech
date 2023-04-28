@@ -100,9 +100,13 @@ extern void Particle_set_angularVelocity3D_m56AE22FE7AFB178DD206EA2A7E0DA64B360D
 extern void MinMaxCurve_get_constant_m4F2B7693C00CC9FAEDE1DAD32FEEE893414FBE91 (void);
 // 0x0000002C UnityEngine.Color UnityEngine.ParticleSystem/MinMaxGradient::get_color()
 extern void MinMaxGradient_get_color_m534E35D538D549F006E9F90E453D41B92FBAC3BF (void);
-// 0x0000002D System.Int32 UnityEngine.ParticleSystemRenderer::GetMeshes(UnityEngine.Mesh[])
+// 0x0000002D System.Int32 UnityEngine.ParticlePhysicsExtensions::GetCollisionEvents(UnityEngine.ParticleSystem,UnityEngine.GameObject,System.Collections.Generic.List`1<UnityEngine.ParticleCollisionEvent>)
+extern void ParticlePhysicsExtensions_GetCollisionEvents_mD44421A4CC66ECB3D6FD5D9012FE6131D3DB74B7 (void);
+// 0x0000002E System.Int32 UnityEngine.ParticleSystemRenderer::GetMeshes(UnityEngine.Mesh[])
 extern void ParticleSystemRenderer_GetMeshes_m3CA9AA8947C7F0468F6C0B7F1344D747EA43D440 (void);
-static Il2CppMethodPointer s_methodPointers[45] = 
+// 0x0000002F System.Int32 UnityEngine.ParticleSystemExtensionsImpl::GetCollisionEvents(UnityEngine.ParticleSystem,UnityEngine.GameObject,System.Collections.Generic.List`1<UnityEngine.ParticleCollisionEvent>)
+extern void ParticleSystemExtensionsImpl_GetCollisionEvents_mEEDB71C2FE85835660149E03178CFD1F503E15E3 (void);
+static Il2CppMethodPointer s_methodPointers[47] = 
 {
 	ParticleSystem_Emit_m27ED2FE38DEE11C9C98F7D30392BB5B39B6A16ED,
 	ParticleSystem_Emit_m329091E7F55C972CE85A100CA624192AD8442688,
@@ -148,7 +152,9 @@ static Il2CppMethodPointer s_methodPointers[45] =
 	Particle_set_angularVelocity3D_m56AE22FE7AFB178DD206EA2A7E0DA64B360D7EA8,
 	MinMaxCurve_get_constant_m4F2B7693C00CC9FAEDE1DAD32FEEE893414FBE91,
 	MinMaxGradient_get_color_m534E35D538D549F006E9F90E453D41B92FBAC3BF,
+	ParticlePhysicsExtensions_GetCollisionEvents_mD44421A4CC66ECB3D6FD5D9012FE6131D3DB74B7,
 	ParticleSystemRenderer_GetMeshes_m3CA9AA8947C7F0468F6C0B7F1344D747EA43D440,
+	ParticleSystemExtensionsImpl_GetCollisionEvents_mEEDB71C2FE85835660149E03178CFD1F503E15E3,
 };
 extern void MainModule__ctor_m5F7D2DD815C741DE3FA18A0C1BB2F2776612EF7A_AdjustorThunk (void);
 extern void MainModule_get_duration_mDCB80E6BD3B6B2DFB92E41FBCCA154D7E7150EB1_AdjustorThunk (void);
@@ -193,59 +199,61 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[20] =
 	{ 0x0600002B, MinMaxCurve_get_constant_m4F2B7693C00CC9FAEDE1DAD32FEEE893414FBE91_AdjustorThunk },
 	{ 0x0600002C, MinMaxGradient_get_color_m534E35D538D549F006E9F90E453D41B92FBAC3BF_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[45] = 
+static const int32_t s_InvokerIndices[47] = 
 {
-	450,
-	5102,
-	6084,
-	4996,
-	5933,
-	4806,
-	1308,
-	2606,
-	939,
-	2112,
-	4884,
-	4884,
-	2717,
-	4761,
-	6240,
-	6244,
-	6144,
-	2095,
-	4914,
-	6084,
-	5933,
-	6241,
-	6242,
-	9426,
-	9052,
-	8723,
-	8723,
-	4914,
-	6002,
-	4296,
-	9187,
-	8473,
-	4957,
-	5001,
-	5001,
-	4957,
-	4957,
-	4812,
-	4996,
-	4957,
-	5001,
-	5001,
-	6084,
-	5937,
-	4046,
+	495,
+	5873,
+	7031,
+	5760,
+	6866,
+	5541,
+	1443,
+	3016,
+	1031,
+	2449,
+	5632,
+	5632,
+	3137,
+	5495,
+	7203,
+	7207,
+	7101,
+	2432,
+	5665,
+	7031,
+	6866,
+	7204,
+	7205,
+	10544,
+	10152,
+	9803,
+	9803,
+	5665,
+	6942,
+	4930,
+	10292,
+	9543,
+	5712,
+	5765,
+	5765,
+	5712,
+	5712,
+	5547,
+	5760,
+	5712,
+	5765,
+	5765,
+	7031,
+	6870,
+	8561,
+	4647,
+	8561,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_ParticleSystemModule_CodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_ParticleSystemModule_CodeGenModule = 
 {
 	"UnityEngine.ParticleSystemModule.dll",
-	45,
+	47,
 	s_methodPointers,
 	20,
 	s_adjustorThunks,

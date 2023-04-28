@@ -12457,7 +12457,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TimelineDisableUndoScopeLegacy__cctor_m0
 		// s_EnableUndo = disableUndoGuardType.GetField(s_FieldStr, BindingFlags.NonPublic | BindingFlags.Static);
 		NullCheck(L_7);
 		FieldInfo_t* L_8;
-		L_8 = VirtualFuncInvoker2< FieldInfo_t*, String_t*, int32_t >::Invoke(83 /* System.Reflection.FieldInfo System.Type::GetField(System.String,System.Reflection.BindingFlags) */, L_7, _stringLiteralBA17409CBCE3E44055BD7D3A6D5B9F4B6A7FD09C, ((int32_t)40));
+		L_8 = VirtualFuncInvoker2< FieldInfo_t*, String_t*, int32_t >::Invoke(85 /* System.Reflection.FieldInfo System.Type::GetField(System.String,System.Reflection.BindingFlags) */, L_7, _stringLiteralBA17409CBCE3E44055BD7D3A6D5B9F4B6A7FD09C, ((int32_t)40));
 		((TimelineDisableUndoScopeLegacy_tAF2F2ACFDB1FCFD6C35A5AD6C5ECD0282E53FFE9_StaticFields*)il2cpp_codegen_static_fields_for(TimelineDisableUndoScopeLegacy_tAF2F2ACFDB1FCFD6C35A5AD6C5ECD0282E53FFE9_il2cpp_TypeInfo_var))->___s_EnableUndo_2 = L_8;
 		Il2CppCodeGenWriteBarrier((void**)(&((TimelineDisableUndoScopeLegacy_tAF2F2ACFDB1FCFD6C35A5AD6C5ECD0282E53FFE9_StaticFields*)il2cpp_codegen_static_fields_for(TimelineDisableUndoScopeLegacy_tAF2F2ACFDB1FCFD6C35A5AD6C5ECD0282E53FFE9_il2cpp_TypeInfo_var))->___s_EnableUndo_2), (void*)L_8);
 		// }

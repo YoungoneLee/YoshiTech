@@ -11206,7 +11206,7 @@ IL_000d_2:
 					// var json = streamReader.ReadToEnd();
 					NullCheck(L_6);
 					String_t* L_7;
-					L_7 = VirtualFuncInvoker0< String_t* >::Invoke(11 /* System.String System.IO.TextReader::ReadToEnd() */, L_6);
+					L_7 = VirtualFuncInvoker0< String_t* >::Invoke(12 /* System.String System.IO.TextReader::ReadToEnd() */, L_6);
 					V_0 = L_7;
 					// var data = default(ClientInitialization);
 					V_1 = (ClientInitialization_t0849DB03F625A61D9BBFAD52C09D53C40AA550CF*)NULL;
