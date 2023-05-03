@@ -14,7 +14,13 @@ namespace Inventory
 
         private void Start()
         {
-            inventoryUI.InitializeInventoryUI(inventorySize);
+            //inventoryUI.InitializeInventoryUI(inventorySize);
         }
+
+        private vod PrepareInventoryData()
+        {
+            inventoryData.Initialize();
+        }
+
     }
 }

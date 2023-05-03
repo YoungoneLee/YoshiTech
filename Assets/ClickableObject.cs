@@ -1,6 +1,10 @@
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
+using System.Collections;
+using System.Collections.Generic;
+using Inventory.UI;
+using UnityEngine.UI;
 
 public class ClickableObject : MonoBehaviour
 {
@@ -9,11 +13,20 @@ public class ClickableObject : MonoBehaviour
     private ARTrackedObjectManager trackedObjectManager;
     private bool isObjectClicked = false;
 
+    public Sprite[] images;
+    public string[] names = { "Dr. Tan", "Dr. Fogarty", "Dr. Horn", "Dr. Myers", "Dr. Zhang", "Dr. Hibbs", "Dr. Lewis", "Dr. Tuba", "Wen", "Janet", "Dohoon", "Konstantine", "Nathan", "Tray", "Quang", "Leah", "Christian", "Donya", "Brandon", "Jose", "Ashwin", "Ashley", "Julia", "Casey", "Agustin" };
+
+    [SerializeField]
+    private UIInventoryPage inventoryUI;
+    public int inventorySize = 16;
+    public int cnt = 0;
+
     void Start()
     {
         raycastManager = GetComponent<ARRaycastManager>();
         trackedObjectManager = FindObjectOfType<ARTrackedObjectManager>();
         uiObject.SetActive(false);
+        inventoryUI.InitializeInventoryUI(inventorySize);
     }
 
     void Update()
@@ -37,6 +50,7 @@ public class ClickableObject : MonoBehaviour
                         uiObject.SetActive(true);
                         gameObject.SetActive(false);
                         Invoke("ShowObject", 5f);
+                        AddTheYosh();
                     }
                 }
             }
@@ -53,5 +67,13 @@ public class ClickableObject : MonoBehaviour
     void rotateYoshi()
     {
         this.transform.Rotate(0, 1, 0);
+    }
+
+    public void AddTheYosh()
+    {
+        int randColor = Random.Range(0, images.Length - 1);
+        int randName = Random.Range(0, names.Length - 1);
+        inventoryUI.UpdateData(cnt, images[randColor], names[randName]);
+        cnt++;
     }
 }

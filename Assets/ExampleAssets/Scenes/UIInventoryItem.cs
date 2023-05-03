@@ -14,7 +14,7 @@ namespace Inventory.UI
         private Image itemImage;
         [SerializeField]
         private TMP_Text nameTxt;
-        //private TMP_Text nameTxt;
+
 
         public void SetData(Sprite sprite, string name)
         {
