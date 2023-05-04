@@ -18,10 +18,18 @@ namespace Inventory.UI
 
         public void SetData(Sprite sprite, string name)
         {
+
+            //spriteRenderer.enabled = false;
             itemImage.gameObject.SetActive(true);
             itemImage.sprite = sprite;
             nameTxt.text = "" + name;
-            //empty = false;
+
+
+
+            //    //chat
+            //    itemImage.sprite = sprite;
+            //    nameTxt.text = name;
+            //    itemImage.enabled = false; // disable the Image component to make the sprite invisible
         }
     }
 }

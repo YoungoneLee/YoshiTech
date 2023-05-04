@@ -26,7 +26,7 @@ public class ClickableObject : MonoBehaviour
         raycastManager = GetComponent<ARRaycastManager>();
         trackedObjectManager = FindObjectOfType<ARTrackedObjectManager>();
         uiObject.SetActive(false);
-        inventoryUI.InitializeInventoryUI(inventorySize);
+        //inventoryUI.InitializeInventoryUI(inventorySize);
     }
 
     void Update()
@@ -38,6 +38,7 @@ public class ClickableObject : MonoBehaviour
         if (!isObjectClicked && Input.touchCount == 1)
         {
             Touch touch = Input.GetTouch(0);
+            Debug.Log("Clicked yoshi screen");
             if (touch.phase == TouchPhase.Began)
             {
                 Ray ray = Camera.main.ScreenPointToRay(touch.position);
@@ -50,7 +51,7 @@ public class ClickableObject : MonoBehaviour
                         uiObject.SetActive(true);
                         gameObject.SetActive(false);
                         Invoke("ShowObject", 5f);
-                        AddTheYosh();
+                        //AddTheYosh();
                     }
                 }
             }
@@ -69,11 +70,21 @@ public class ClickableObject : MonoBehaviour
         this.transform.Rotate(0, 1, 0);
     }
 
-    public void AddTheYosh()
-    {
-        int randColor = Random.Range(0, images.Length - 1);
-        int randName = Random.Range(0, names.Length - 1);
-        inventoryUI.UpdateData(cnt, images[randColor], names[randName]);
-        cnt++;
-    }
+    //public void AddTheYosh()
+    //{
+        
+    //    int randColor = Random.Range(0, images.Length - 1);
+    //    int randName = Random.Range(0, names.Length - 1);
+
+    //    Debug.Log("randColor: " + randColor);
+    //    Debug.Log("randName: " + randName);
+
+    //    Debug.Log("images length: " + images.Length);
+    //    Debug.Log("names length: " + names.Length);
+
+    //    Debug.Log("images[randColor]: " + images[randColor]);
+    //    Debug.Log("names[randName]: " + names[randName]);
+    //    inventoryUI.UpdateData(cnt, images[randColor], names[randName]);
+    //    cnt++;
+    //}
 }

@@ -17,7 +17,6 @@ namespace Inventory.UI
         private TMP_Text name;
 
         public List<UIInventoryItem> listOfUIItems = new List<UIInventoryItem>();
-        public List<InventoryItem> listOfUIItems = new List<InventoryItem>();
 
 
         public void InitializeInventoryUI(int inventorysize)
@@ -36,6 +35,7 @@ namespace Inventory.UI
         {
             if (listOfUIItems.Count >= itemIndex && itemIndex < 16)
             {
+                //listOfUIItems[itemIndex].(itemImage, itemName);
                 listOfUIItems[itemIndex].SetData(itemImage, itemName);
             }
         }

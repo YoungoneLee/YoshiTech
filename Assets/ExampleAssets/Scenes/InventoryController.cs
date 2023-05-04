@@ -17,9 +17,9 @@ namespace Inventory
             //inventoryUI.InitializeInventoryUI(inventorySize);
         }
 
-        private vod PrepareInventoryData()
+        private void PrepareInventoryData()
         {
-            inventoryData.Initialize();
+            inventoryUI.InitializeInventoryUI(inventorySize);
         }
 
     }
