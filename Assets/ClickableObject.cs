@@ -5,12 +5,17 @@ using UnityEngine.XR.ARSubsystems;
 public class ClickableObject : MonoBehaviour
 {
     public GameObject uiObject;
+    public AddItemToCanvas addItems;
+    public jankyShow jank;
     private ARRaycastManager raycastManager;
     private ARTrackedObjectManager trackedObjectManager;
     private bool isObjectClicked = false;
 
     void Start()
     {
+        jank = FindObjectOfType<jankyShow>();
+
+        //addItems = FindObjectOfType<AddItemToCanvas>();
         raycastManager = GetComponent<ARRaycastManager>();
         trackedObjectManager = FindObjectOfType<ARTrackedObjectManager>();
         uiObject.SetActive(false);
@@ -45,6 +50,8 @@ public class ClickableObject : MonoBehaviour
 
     void ShowObject()
     {
+        jank.showItems();
+        //addItems.AddItem();
         uiObject.SetActive(false);
         gameObject.SetActive(true);
         isObjectClicked = false;
